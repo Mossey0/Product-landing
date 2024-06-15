@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px solid; */
+}
+
+/* universal settings*/
+
+.footer-links h5:hover, .nav-link p:hover {
+    cursor: grab
+    
+}
+html {
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+/* Head of the page */
+
+.fixed-container{
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    flex: .3;
+    padding-right: 1rem;
+
+}
+.title {
+    flex: .6;
+    font-size: 1.5rem;
+    margin-right: 6rem;
+    font-family: sans-serif;
+}
+
+/* Body-header of the page */
+.body-head {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-head h1 {
+    font-size: 1.3rem;
+}
+.email {
+    height: 1.2rem;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.start-button {
+    height: 1.3rem;
+    width: 200px;
+    margin-bottom: 5rem;
+    background-color:rgb(238, 191, 21);
+    border: none;
+    transition: background-color .2s ease-in ;
+}
+.start-button:hover {
+    background-color: rgb(238, 162, 21);
+}
+
+/* the main body of the page */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* icons and first 3 paragraphs */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    min-width: 60%;
+}
+
+.section1-div {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    margin-left: 100px;
+    padding-right: 20px;
+    gap: 2rem;
+
+}
+.section1-div-symbol {
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.section1-div-text p{
+    font-size: .8rem;
+    
+}
+
+.section1-div-text h4, .section1-div-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* youtube video part */
+.video {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* containers at the bottom: flexbox */
+
+.containerstack {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.containerstack1, .containerstack2, .containerstack3 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 325px
+}
+
+.containerstack header {
+    background-color: rgba(115, 115, 150, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.containerstack-body {
+    text-align: center;
+    width: 100%;
+}
+
+.select-button {
+    margin: .9rem;
+    width: 4rem;
+    height: 1.9rem;
+    background-color:rgb(238, 191, 21);
+    border: none;
+    border-radius: 3px;
+}
+.select-button:hover {
+    background-color:rgb(238, 162, 21);
+    border: none;
+    transition: background-color .2s ease-in ;
+}
+
+/* footer at the bottom*/
+
+.footer-container-box {
+    background-color: rgba(115, 115, 150, 0.1);
+    display:flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-self: center;
+    width: 100%;
+    margin-left: rem;
+    padding-right: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.copyright-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.copyright-box p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.footer-links h5 {
+    margin: 5px;
+    padding: 0;
+}
+
